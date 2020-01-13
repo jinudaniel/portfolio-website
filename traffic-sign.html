@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jinu Daniel Portfolio</title>
+        <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- <img src="img/.png" alt=""> -->
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Traffic Sign Classifier
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Traffic Sign Classifier using CNN and Tensorflow.</p>
+            <!-- <img src="img/portfolio-01.jpg" alt="" class="intro__img"> -->
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>The goal of this project was to implement a Convolutional Neural Network to detect German Traffic Sign using TensorFlow. The entire model was trained a ubuntu instance on Google Cloud Platform (GCP) with a NVIDIA Tesla K80 GPU.</p>
+                <p>The data set used is the German Traffic Sign data set that can be dowloaded from <a href="http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset#Downloads" target="_blank" class="portfolio-link">here</a>. German Traffic Sign Dataset is a set of <b>51,839</b> labeled images of <b>43</b> different German traffic signs. It comes in two separate sets. A set of <b>39,209</b> images for training and another set of <b>12,630</b> in order to test the accuracy of our trained network. 
+                    A pickled version of the dataset can be downloaded from <a href="https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip" target="_blank" class="portfolio-link">here</a>.
+                </p>
+                <p>The CNN architecture used was LeNet architecture with 2 CONV layers and 3 fully connected layers. Activation function was ReLU. Training was done for 30 epochs with a batch size of 128 using Adam Optimizer. I was able to obtain a validation accuracy of <b>96.4%</b> and test accuracy of <b>91.8%</b></p>
+        </div>
+        <div class="portfolio-item-button">
+            <a href="https://github.com/jinudaniel/traffic-sign-classifier" class="btn" target="_blank">View Code</a>
+        </div>
+        
+        
+          <!-- Footer -->
+          <footer class="footer">
+            <a href="mailto:jinudaniel74@gmail.com" class="footer__link">jinudaniel74@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/jinudaniel74" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/jinudaniel" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jinu-daniel/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
