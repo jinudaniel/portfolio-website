@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio page created using HTML and CSS. This is work in progress.
+Portfolio page created using HTML and CSS. Check out the site [here](https://www.jinudaniel.com/)
