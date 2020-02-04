@@ -326,6 +326,10 @@ header {
     margin: 0 auto;
 }
 
+.service p {
+    font-size: 1.25rem;
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -347,6 +351,10 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+}
+
+.about-me__body p {
+    font-size: 1.25rem;
 }
 
 @media (min-width: 600px) {
@@ -400,6 +408,30 @@ header {
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    position: relative;
+}
+
+.portfolio__item__text {
+    color: var(--clr-dark);
+    opacity: 0;
+    display: block;
+    background: var(--clr-accent);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.portfolio__item__text--content {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .portfolio__img {
@@ -417,6 +449,11 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .5;
+}
+
+.portfolio__item__text:hover,
+.portfolio__item__text:focus .portfolio__item__text {
+    opacity: 0.8;
 }
 
 
