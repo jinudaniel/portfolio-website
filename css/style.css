@@ -424,6 +424,9 @@ header {
     font-size: 1.75rem;
     text-transform: uppercase;
     font-weight: 600;
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
 }
 
 .portfolio__item__text--content {
@@ -434,11 +437,11 @@ header {
     transform: translateY(-50%);
 }
 
-.portfolio__img {
+/* .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-}
+} */
 
 .portfolio__item:focus {
     position: relative;
@@ -453,7 +456,7 @@ header {
 
 .portfolio__item__text:hover,
 .portfolio__item__text:focus .portfolio__item__text {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 
